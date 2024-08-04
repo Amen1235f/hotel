@@ -1,0 +1,134 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from peakcryptos.com/hotel/admin by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Aug 2024 11:27:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pico sandes Hotel - Admin Login</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/images/logoIcon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="assets/global/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/viser_admin/css/vendor/bootstrap-toggle.min.css">
+    <link href="assets/global/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/global/css/line-awesome.min.css">
+
+            <link rel="stylesheet" href="assets/global/css/iziToast.min.css">
+
+    <link rel="stylesheet" href="assets/viser_admin/css/vendor/select2.min.css">
+    <link rel="stylesheet" href="assets/viser_admin/css/vendor/jquery-jvectormap-2.0.5.css">
+    <link rel="stylesheet" href="assets/global/css/vendor/datepicker.min.css">
+    <link rel="stylesheet" href="assets/viser_admin/css/vendor/jquery-timepicky.css">
+    <link rel="stylesheet" href="assets/viser_admin/css/vendor/bootstrap-clockpicker.min.css">
+    <link rel="stylesheet" href="assets/viser_admin/css/app.css">
+    <link rel="stylesheet" href="assets/viser_admin/css/custom.css">
+
+    </head>
+
+<body>
+    <div class="login-main"
+    style="background-image: url('assets/viser_admin/images/login.jpg')">
+    <div class="container custom-container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-11">
+                <div class="login-area">
+                    <div class="login-wrapper">
+                        <div class="login-wrapper__top">
+                            <h3 class="title text-white">Welcome to <strong>pico sandes Hotel</strong></h3>
+                            <p class="text-white">Admin Login to pico sandes Hotel
+                                Dashboard</p>
+                        </div>
+                        <div class="login-wrapper__body">
+                            <form action="https://peakcryptos.com/hotel/admin" method="POST"
+                                class="cmn-form mt-30 verify-gcaptcha login-form">
+                                <input type="hidden" name="_token" value="jClyJLPV2Q9NfGJfzdpqAlMnuiOTJSMDxpfGHKyq">                                <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" name="username" value="" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" name="password" required>
+                                </div>
+                                                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" name="remember" type="checkbox" id="remember">
+                                        <label class="form-check-label" for="remember">Remember Me</label>
+                                    </div>
+                                    <a href="admin/password/reset.html"
+                                        class="forget-text">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="btn cmn-btn w-100">LOGIN</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="assets/global/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/global/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/viser_admin/js/vendor/bootstrap-toggle.min.js"></script>
+    <script src="assets/viser_admin/js/vendor/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/global/js/iziToast.min.js"></script>
+
+    <script src="assets/viser_admin/js/nicEdit.js"></script>
+
+    <script src="assets/viser_admin/js/vendor/select2.min.js"></script>
+    <script src="assets/viser_admin/js/app.js"></script>
+
+    
+    <script>
+        "use strict";
+
+        bkLib.onDomLoaded(function() {
+            $(".nicEdit").each(function(index) {
+                $(this).attr("id", "nicEditor" + index);
+                new nicEditor({
+                    fullPanel: true
+                }).panelInstance('nicEditor' + index, {
+                    hasPanel: true
+                });
+            });
+        });
+
+        (function($) {
+            $(document).on('mouseover ', '.nicEdit-main,.nicEdit-panelContain', function() {
+                $('.nicEdit-main').focus();
+            });
+        })(jQuery);
+
+    </script>
+
+        
+    
+    <script>
+        "use strict";
+
+        function notify(status, message) {
+            if (typeof message == 'string') {
+                iziToast[status]({
+                    message: message,
+                    position: "topRight"
+                });
+            } else {
+                $.each(message, function(i, val) {
+                    iziToast[status]({
+                        message: val,
+                        position: "topRight"
+                    });
+                });
+            }
+        }
+    </script>
+</body>
+
+
+<!-- Mirrored from peakcryptos.com/hotel/admin by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Aug 2024 11:27:29 GMT -->
+</html>
